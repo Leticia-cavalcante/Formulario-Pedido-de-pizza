@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+
+    <link rel="stylesheet" href="src/css/estilo.css">
+</head>
+<body>
+
+    <h1>Pedido de Pizza</h1>
+
+    <form method="POST" action="teste.jsp">
+
+        Nome: 
+        <input type="text" name="nome" required><br><br>
+
+        Email: 
+        <input type="email" name="email" required><br><br>
+
+        Tamanho:<br>
+        <input type="radio" name="tamanho" value="grande" checked>Grande
+        <input type="radio" name="tamanho" value="medio">Médio
+        <input type="radio" name="tamanho" value="pequeno">Pequeno
+        <br><br>
+
+        Sabor:
+        <select name="sabor" required>
+            <option value="calabresa">Calabresa</option>
+            <option value="marguerita">Marguerita</option>
+            <option value="4queijos">4 Queijos</option>
+            <option value="carneSeca">Carne Seca</option>
+        </select>
+        <br><br>
+
+        Adicionais:<br>
+        <input type="checkbox" name="queijo_extra" value="sim">Queijo Extra
+        <input type="checkbox" name="calabresa_extra" value="sim">Calabresa Extra
+        <input type="checkbox" name="carne_seca_extra" value="sim">Carne Seca Extra
+        <br><br>
+
+        Borda:<br>
+        <input type="radio" name="borda" value="sem" checked>Sem Borda
+        <input type="radio" name="borda" value="catupiry">Catupiry
+        <input type="radio" name="borda" value="cheddar">Cheddar
+        <br><br>
+
+        Data de Entrega:
+        <input type="date" name="dataEntrega" required>
+        <br><br>
+
+        Comentário:<br>
+        <textarea name="mensagem" rows="5" cols="50" placeholder="Alguma observação?"></textarea>
+        <br><br>
+
+        <input type="submit" value="Fazer Pedido">
+
+    </form>
+
+</body>
+</html>
+</html>
